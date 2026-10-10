@@ -100,3 +100,10 @@ space-exploration-website/
 - **Some APOD videos may not embed.** The app puts the video link into an iframe, which works for embed links (such as YouTube) but may not for every video host.
 - **Search results are limited by the API.** The library returns results in pages, so very deep pages may not be available.
 - **No tests and no automatic runtime check were run for this project.** If an API changes its response shape, `src/api/nasa.js` is the place to fix it.
+
+## Deploying it online (free)
+
+1. Sign in to [Vercel](https://vercel.com) with GitHub and choose Add New Project.
+2. Import this repository. Vercel detects Vite automatically.
+3. (Optional) Add the environment variable `VITE_NASA_API_KEY` with your own NASA key.
+4. Click Deploy. The included `vercel.json` makes page refreshes on `/search` work.
